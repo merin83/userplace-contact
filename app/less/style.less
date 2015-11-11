@@ -1,0 +1,399 @@
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+
+.btn-landing-white {
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 6px 25px;
+  color: #fff;
+  transition: all .3s ease;
+  font-size: 13px;
+  font-weight: 300;
+  outline: 0;
+  &:hover,
+  &:focus,
+  &:active {
+    color: #000;
+    background: #fff;
+    border-color: #fff;
+  }
+
+}
+
+.btn-landing-orange {
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 70px;
+  color: #fff;
+  transition: all .3s ease;
+  font-size: 15px;
+  font-weight: 400;
+  background: #e74c3c;
+  outline: 0;
+
+  &.subscribe {
+    position: relative;
+    padding: 14px 25px 15px;
+    top: -1px;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    background: darken(#e74c3c, 5%);
+    border-color: transparent;
+  }
+
+}
+
+button {
+  outline: 0;
+  &:focus,
+  &:active {
+    outline: 0;
+    border: 0;
+  }
+}
+
+.landing-banner {
+  position: relative;
+  background: url('../img/banner-img.jpg') bottom center no-repeat;
+  background-size: cover;
+  padding: 40px 0 70px;
+
+
+  .overlay{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+  }
+
+  .landing-header {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    z-index: 999;
+    .logo {
+      position: relative;
+      width: 90px;
+      a {
+        width: 100%;
+        display: block;
+      }
+    }
+    .call-to-action {
+      a {
+        margin-left: 20px;
+      }
+    }
+
+  }
+  .landing-video {
+    position: relative;
+    max-width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0;
+    z-index: 999;
+
+    .videoWrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      padding-top: 25px;
+      height: 0;
+      margin: o auto;
+      width: 100%;
+      text-align: center;
+
+      h1{
+        color: #fff;
+        font-size: 60px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-top: 100px;
+        span {
+          color: #B8B8B8;
+          text-transform: lowercase;
+          letter-spacing: 0px;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 20px;
+      }
+      a {
+        margin-top: 20px;
+        font-size: 15px;
+      }
+    }
+
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+
+.landing-demo-block {
+  position: relative;
+  padding: 80px 0;
+  margin: 0 auto;
+
+  &.pb-zero {
+    padding-bottom: 0;
+  }
+
+  &.grey {
+    background: rgba(233, 233, 233, 0.35);
+
+  }
+
+  &.orange {
+    background: #ea5d2d;
+  }
+
+  &.footer {
+    padding: 15px 0;
+  }
+
+  &.with-bg {
+    background: url('../img/bottom-bg.jpg') top center no-repeat;
+  }
+
+  .button-link {
+    a {
+      margin: 5px;
+      &.btn-landing-white {
+        padding: 10px 30px;
+        font-size: 15px;
+      }
+    }
+  }
+  .demo-block-title {
+    position: relative;
+    margin-bottom: 40px;
+    &.footer {
+      margin-bottom: 0;
+    }
+    .small-title {
+      margin: 0;
+      color: #979797;
+      font-size: 19px;
+
+      .orange& {
+        color: #fff;
+      }
+    }
+    h2 {
+      margin: 0;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: 700;
+      font-size: 36px;
+      padding: 15px 0 30px;
+      .color {
+        color: #e74c3c;
+      }
+
+      .orange& {
+        color : darken(#ea5d2d, 27%);
+      }
+
+      .with-bg& {
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .version {
+        text-transform: lowercase;
+        color: #666;
+      }
+
+      &.footer {
+        padding: 15px 0;
+      }
+
+      &.big-title {
+        font-weight: 300;
+        &.footer {
+          font-size: 13px;
+          line-height: 30px;
+          margin-bottom: 0;
+          color: #fff;
+          text-transform: capitalize;
+          a {
+            color: #fff;
+            font-weight: 700;
+          }
+          span {
+            display: block;
+            font-size: 13px;
+          }
+        }
+
+      }
+    }
+    .long-title {
+      font-size: 17px;
+      .orange& {
+        color: #fff;
+      }
+
+      .with-bg& {
+        color: #fff;
+      }
+    }
+  }
+
+  .for-image {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+// feature grid
+.feature-grid {
+  position: relative;
+  padding-top: 50px;
+  .content {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .img-content {
+    position: relative;
+    widht: 100%;
+
+  }
+}
+
+// inner title
+.inner-title {
+  position: relative;
+  .small-title {
+    font-size: 16px;
+    margin: 0;
+  }
+  h4 {
+    margin: 0;
+    padding: 5px 0 20px;
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+.feature-single {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+
+  img {
+    height: 50px;
+    margin-bottom: 8px;
+  }
+
+  i {
+    width :55px;
+    height: 50px;
+    border: 2px solid #666;
+    text-align: center;
+    line-height: 45px;
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .feature-title {
+    font-size: 25px;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    .color {
+      color: #e74c3c;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.contact-form-content {
+  position: relative;
+  .quote {
+    font-size: 25px;
+    max-width: 450px;
+    color: #000;
+    line-height: 35px;
+    padding-left: 20px;
+    border-left: 10px solid #d3d7d9;
+
+  }
+  h4 {
+    color: #000;
+    font-size: 55px;
+    font-weight: 300;
+    padding: 20px;
+  }
+}
+
+textarea {
+  &.input-control {
+    resize: none;
+  }
+}
+
+.input-control {
+  padding: 10px 20px;
+  border: 0;
+  background-color: lighten(#dcdbdb, 2%);
+  color: #666;
+  outline: 0;
+  transition: all .3s ease;
+  min-width: 400px;
+  margin-bottom: 20px;
+
+  &:focus,
+  &:active {
+    background-color: #dcdbdb;
+  }
+
+  &.subscribe {
+    padding: 14px 25px;
+  }
+}
+
+.footer {
+  h2 {
+    color: #fff;
+  }
+}
+
+@import 'support.less';
+
+
+
+
+
+
+
+

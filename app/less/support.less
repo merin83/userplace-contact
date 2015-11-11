@@ -1,0 +1,262 @@
+@primary-color: #e74c3c;
+
+
+.login-register-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+
+  &.register {
+    background: url('../img/banner-img.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  &.login {
+      background: url('../img/support-bg.jpg') bottom center no-repeat;
+      background-size: cover;
+  }
+  .login-page-logo {
+    position: relative;
+
+    img {
+      width: 100px;
+
+    }
+  }
+
+  .login-text {
+    padding: 20px;
+    background: rgba(0,0,0, .5);
+    margin-top: 10px;
+    border-radius: 4px;
+    h1 {
+      color: #fff;
+      text-align: left;
+      text-transform: none;
+      font-weight: normal;
+      line-height: 45px;
+      letter-spacing: 2px;
+    }
+
+    p {
+      font-style: normal !important;
+      color: #fff !important;
+      line-height: 30px;
+      font-weight: 300;
+      letter-spacing: 1px;
+      text-align: left;
+
+
+    }
+  }
+
+  .form-container {
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px;
+
+    h3 {
+      color: #000;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    p {
+      color: #666;
+      text-transform: normal;
+      font-style: normal;
+      padding-top: 20px;
+
+    }
+
+    .gender-selection {
+      position: relative;
+      width: 100%;
+
+      &.forgot-password {
+        display: inline-block;
+        padding: 20px 0 0;
+
+        a {
+          color: @primary-color;
+          font-size: 12px;
+        }
+
+
+      }
+    }
+
+    .radio-input {
+      position: relative;
+      margin-right: 15px;
+
+      label {
+        padding-left: 5px;
+        font-weight: normal;
+
+      }
+    }
+
+    button {
+      width: 200px;
+      margin: 40px 0 10px;
+
+      &.btn {
+        border-radius: 7px;
+      }
+    }
+
+    .sing-in-text {
+      color: #000;
+      font-size: 11px;
+
+      a {
+        color: @primary-color;
+      }
+    }
+  }
+
+  input ,
+  textarea {
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 15px;
+
+    &.form-control {
+      box-shadow: none;
+      padding-left: 0;
+
+      &:focus,
+      &:active,
+       {
+        border: 0 !important;
+        border-bottom: 1px solid @primary-color !important;
+      }
+
+    }
+  }
+
+
+  ::-webkit-input-placeholder {
+     font-size: 13px;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     font-size: 13px;
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     font-size: 13px;
+  }
+
+  :-ms-input-placeholder {
+     font-size: 13px;
+  }
+
+
+}
+
+
+.small-content-area {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: table;
+
+
+  &.text-left {
+    text-align: left;
+  }
+
+  .css-table-cell {
+    height:100%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+
+
+    .text-left& {
+      vertical-align: bottom;
+      padding-bottom: 80px;
+    }
+
+    h1 {
+      color: #fff;
+
+    }
+
+    p {
+      font-size: 15px;
+      font-style: italic;
+      color: #ddd;
+
+      .text-left& {
+        font-style: normal;
+        font-size: 13px;
+        color: #fff;
+        max-width: 400px;
+        font-weight: 100;
+        line-height: 26px;
+
+      }
+    }
+  }
+}
+
+
+
+.demo-form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 50px;
+  background: rgba(0,0,0, .5);
+
+  h2 {
+    color :#fff;
+    padding-bottom: 20px;
+    font-weight: 300;
+  }
+
+  h4 {
+    margin-top: 0;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  form {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+
+    input {
+      width :100%;
+      height: 40px;
+      color: #fff;
+      padding: 10px 35px 10px 15px !important;
+      background: rgba(0,0,0, .7);
+      border-bottom: 1px solid transparent;
+    }
+    button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 40px;
+      width: 60px;
+      background: @primary-color;
+      color :#fff;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+}

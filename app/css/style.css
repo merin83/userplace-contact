@@ -1,0 +1,540 @@
+body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #979797;
+}
+.btn-landing-white {
+  border: 2px solid #fff;
+  border-radius: 0;
+  padding: 6px 25px;
+  color: #fff;
+  transition: all .3s ease;
+  font-size: 13px;
+  font-weight: 300;
+  outline: 0;
+}
+.btn-landing-white:hover,
+.btn-landing-white:focus,
+.btn-landing-white:active {
+  color: #000;
+  background: #fff;
+  border-color: #fff;
+}
+.btn-landing-orange {
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 10px 70px;
+  color: #fff;
+  transition: all .3s ease;
+  font-size: 15px;
+  font-weight: 400;
+  background: #e74c3c;
+  outline: 0;
+}
+.btn-landing-orange.subscribe {
+  position: relative;
+  padding: 14px 25px 15px;
+  top: -1px;
+}
+.btn-landing-orange:hover,
+.btn-landing-orange:active,
+.btn-landing-orange:focus {
+  color: #fff;
+  background: #e43725;
+  border-color: transparent;
+}
+button {
+  outline: 0;
+}
+button:focus,
+button:active {
+  outline: 0;
+  border: 0;
+}
+.landing-banner {
+  position: relative;
+  background: url('../img/banner-img.jpg') bottom center no-repeat;
+  background-size: cover;
+  padding: 40px 0 70px;
+}
+.landing-banner .overlay {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+}
+.landing-banner .landing-header {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  z-index: 999;
+}
+.landing-banner .landing-header .logo {
+  position: relative;
+  width: 90px;
+}
+.landing-banner .landing-header .logo a {
+  width: 100%;
+  display: block;
+}
+.landing-banner .landing-header .call-to-action a {
+  margin-left: 20px;
+}
+.landing-banner .landing-video {
+  position: relative;
+  max-width: 700px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 0;
+  z-index: 999;
+}
+.landing-banner .landing-video .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  margin: o auto;
+  width: 100%;
+  text-align: center;
+}
+.landing-banner .landing-video .videoWrapper h1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-top: 100px;
+}
+.landing-banner .landing-video .videoWrapper h1 span {
+  color: #B8B8B8;
+  text-transform: lowercase;
+  letter-spacing: 0px;
+}
+.landing-banner .landing-video .videoWrapper p {
+  color: #fff;
+  font-size: 20px;
+}
+.landing-banner .landing-video .videoWrapper a {
+  margin-top: 20px;
+  font-size: 15px;
+}
+.landing-banner .landing-video .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.landing-demo-block {
+  position: relative;
+  padding: 80px 0;
+  margin: 0 auto;
+}
+.landing-demo-block.pb-zero {
+  padding-bottom: 0;
+}
+.landing-demo-block.grey {
+  background: rgba(233, 233, 233, 0.35);
+}
+.landing-demo-block.orange {
+  background: #ea5d2d;
+}
+.landing-demo-block.footer {
+  padding: 15px 0;
+}
+.landing-demo-block.with-bg {
+  background: url('../img/bottom-bg.jpg') top center no-repeat;
+}
+.landing-demo-block .button-link a {
+  margin: 5px;
+}
+.landing-demo-block .button-link a.btn-landing-white {
+  padding: 10px 30px;
+  font-size: 15px;
+}
+.landing-demo-block .demo-block-title {
+  position: relative;
+  margin-bottom: 40px;
+}
+.landing-demo-block .demo-block-title.footer {
+  margin-bottom: 0;
+}
+.landing-demo-block .demo-block-title .small-title {
+  margin: 0;
+  color: #979797;
+  font-size: 19px;
+}
+.orange.landing-demo-block .demo-block-title .small-title {
+  color: #fff;
+}
+.landing-demo-block .demo-block-title h2 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 15px 0 30px;
+}
+.landing-demo-block .demo-block-title h2 .color {
+  color: #e74c3c;
+}
+.orange.landing-demo-block .demo-block-title h2 {
+  color: #802a0d;
+}
+.with-bg.landing-demo-block .demo-block-title h2 {
+  color: #fff;
+  font-weight: 500;
+}
+.landing-demo-block .demo-block-title h2 .version {
+  text-transform: lowercase;
+  color: #666;
+}
+.landing-demo-block .demo-block-title h2.footer {
+  padding: 15px 0;
+}
+.landing-demo-block .demo-block-title h2.big-title {
+  font-weight: 300;
+}
+.landing-demo-block .demo-block-title h2.big-title.footer {
+  font-size: 13px;
+  line-height: 30px;
+  margin-bottom: 0;
+  color: #fff;
+  text-transform: capitalize;
+}
+.landing-demo-block .demo-block-title h2.big-title.footer a {
+  color: #fff;
+  font-weight: 700;
+}
+.landing-demo-block .demo-block-title h2.big-title.footer span {
+  display: block;
+  font-size: 13px;
+}
+.landing-demo-block .demo-block-title .long-title {
+  font-size: 17px;
+}
+.orange.landing-demo-block .demo-block-title .long-title {
+  color: #fff;
+}
+.with-bg.landing-demo-block .demo-block-title .long-title {
+  color: #fff;
+}
+.landing-demo-block .for-image {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+.feature-grid {
+  position: relative;
+  padding-top: 50px;
+}
+.feature-grid .content {
+  font-size: 16px;
+  line-height: 30px;
+}
+.feature-grid .img-content {
+  position: relative;
+  widht: 100%;
+}
+.inner-title {
+  position: relative;
+}
+.inner-title .small-title {
+  font-size: 16px;
+  margin: 0;
+}
+.inner-title h4 {
+  margin: 0;
+  padding: 5px 0 20px;
+  font-size: 30px;
+  color: #000;
+}
+.feature-single {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.feature-single img {
+  height: 50px;
+  margin-bottom: 8px;
+}
+.feature-single i {
+  width: 55px;
+  height: 50px;
+  border: 2px solid #666;
+  text-align: center;
+  line-height: 45px;
+  font-size: 22px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.feature-single .feature-title {
+  font-size: 25px;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+}
+.feature-single .feature-title .color {
+  color: #e74c3c;
+}
+.feature-single p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.contact-form-content {
+  position: relative;
+}
+.contact-form-content .quote {
+  font-size: 25px;
+  max-width: 450px;
+  color: #000;
+  line-height: 35px;
+  padding-left: 20px;
+  border-left: 10px solid #d3d7d9;
+}
+.contact-form-content h4 {
+  color: #000;
+  font-size: 55px;
+  font-weight: 300;
+  padding: 20px;
+}
+textarea.input-control {
+  resize: none;
+}
+.input-control {
+  padding: 10px 20px;
+  border: 0;
+  background-color: #e1e0e0;
+  color: #666;
+  outline: 0;
+  transition: all .3s ease;
+  min-width: 400px;
+  margin-bottom: 20px;
+}
+.input-control:focus,
+.input-control:active {
+  background-color: #dcdbdb;
+}
+.input-control.subscribe {
+  padding: 14px 25px;
+}
+.footer h2 {
+  color: #fff;
+}
+.login-register-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.login-register-page.register {
+  background: url('../img/banner-img.jpg') top center no-repeat;
+  background-size: cover;
+}
+.login-register-page.login {
+  background: url('../img/support-bg.jpg') bottom center no-repeat;
+  background-size: cover;
+}
+.login-register-page .login-page-logo {
+  position: relative;
+}
+.login-register-page .login-page-logo img {
+  width: 100px;
+}
+.login-register-page .login-text {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.login-register-page .login-text h1 {
+  color: #fff;
+  text-align: left;
+  text-transform: none;
+  font-weight: normal;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+.login-register-page .login-text p {
+  font-style: normal !important;
+  color: #fff !important;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: left;
+}
+.login-register-page .form-container {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  background: #fff;
+  border-radius: 6px;
+  padding: 30px;
+}
+.login-register-page .form-container h3 {
+  color: #000;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.login-register-page .form-container p {
+  color: #666;
+  text-transform: normal;
+  font-style: normal;
+  padding-top: 20px;
+}
+.login-register-page .form-container .gender-selection {
+  position: relative;
+  width: 100%;
+}
+.login-register-page .form-container .gender-selection.forgot-password {
+  display: inline-block;
+  padding: 20px 0 0;
+}
+.login-register-page .form-container .gender-selection.forgot-password a {
+  color: #e74c3c;
+  font-size: 12px;
+}
+.login-register-page .form-container .radio-input {
+  position: relative;
+  margin-right: 15px;
+}
+.login-register-page .form-container .radio-input label {
+  padding-left: 5px;
+  font-weight: normal;
+}
+.login-register-page .form-container button {
+  width: 200px;
+  margin: 40px 0 10px;
+}
+.login-register-page .form-container button.btn {
+  border-radius: 7px;
+}
+.login-register-page .form-container .sing-in-text {
+  color: #000;
+  font-size: 11px;
+}
+.login-register-page .form-container .sing-in-text a {
+  color: #e74c3c;
+}
+.login-register-page input,
+.login-register-page textarea {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+.login-register-page input.form-control,
+.login-register-page textarea.form-control {
+  box-shadow: none;
+  padding-left: 0;
+}
+.login-register-page input.form-control:focus,
+.login-register-page textarea.form-control:focus,
+.login-register-page input.form-control:active,
+.login-register-page textarea.form-control:active {
+  border: 0 !important;
+  border-bottom: 1px solid #e74c3c !important;
+}
+.login-register-page ::-webkit-input-placeholder {
+  font-size: 13px;
+}
+.login-register-page :-moz-placeholder {
+  /* Firefox 18- */
+  font-size: 13px;
+}
+.login-register-page ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-size: 13px;
+}
+.login-register-page :-ms-input-placeholder {
+  font-size: 13px;
+}
+.small-content-area {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.small-content-area.text-left {
+  text-align: left;
+}
+.small-content-area .css-table-cell {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.text-left.small-content-area .css-table-cell {
+  vertical-align: bottom;
+  padding-bottom: 80px;
+}
+.small-content-area .css-table-cell h1 {
+  color: #fff;
+}
+.small-content-area .css-table-cell p {
+  font-size: 15px;
+  font-style: italic;
+  color: #ddd;
+}
+.text-left.small-content-area .css-table-cell p {
+  font-style: normal;
+  font-size: 13px;
+  color: #fff;
+  max-width: 400px;
+  font-weight: 100;
+  line-height: 26px;
+}
+.demo-form {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.demo-form h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-weight: 300;
+}
+.demo-form h4 {
+  margin-top: 0;
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+}
+.demo-form form {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.demo-form form input {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  padding: 10px 35px 10px 15px !important;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid transparent;
+}
+.demo-form form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 40px;
+  width: 60px;
+  background: #e74c3c;
+  color: #fff;
+}
+.demo-form form button:hover {
+  color: #ddd;
+}
